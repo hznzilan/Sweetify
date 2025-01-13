@@ -1,0 +1,316 @@
+<!--TITLE-->
+<title>Sweetify.co</title>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<!--GOOGLE FONTS-->
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<!--LINK TO CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Sweetify.css">
+
+<!--TOP NAVIGATION-->
+<header id="header">
+<div class="topnav" id="myTopnav">
+<a id="active"></a>
+<a href="#"><img class="logo" src="/group_proj/SweetifyLogo.jpeg" alt="logo2"></a>
+<a id="active"></a>
+<a href="/" class="active">HOME</a>
+<a href="#" id="ContactLink">CONTACT US</a>
+<a href="#" id="aboutUsLink">ABOUT US</a>
+<a href="#" id="CartLink">CART</a>
+<a href="#" style="float:right;padding: 24px 2px;"><i class="fa fa-search" class="openBtn" onclick="openSearch()"></i></a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
+</div>
+</header>
+
+
+
+<!--CONTAINER-->
+<div class="container">
+<section>
+<h1 class="title-2">Craving Something Sweet? </h1>
+<h5 class="sub-title">We Got You! Order our desserts now</h5>
+</section>
+<img src="https://i.ibb.co/t842sLk/shape.png">
+</div>
+
+<!--product page-->
+<div class="product-page" style="display:none;">
+    
+    <div id="food-container">
+        
+        <div id="food-items">
+            <div id="cookies">
+                <p class="Minititle">Cookies</p>
+                <div id="item-card">   
+                    <img src="/group_proj/Sweetify Images/Cookies/SeaSaltCookies.jpeg" alt="Sea salt cookies">
+                    <p id="item-name">Sea Salt Cookies</p>
+                    <p id="item-price">Price: RM3.00</p>
+                    <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                </div>
+
+                <div id="item-card">   
+                    <img src="/group_proj/Sweetify Images/Cookies/MatchaCookies.jpg" alt="Matcha Cookies">
+                    <p id="item-name">Matcha Cookies</p>
+                    <p id="item-price">Price: RM3.50</p>
+                    <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                </div>
+
+                <div id="item-card">   
+                    <img src="/group_proj/Sweetify Images/Cookies/Chocolatecookie.jpg" alt="Dark chocolate Cookies">
+                    <p id="item-name">Dark Choc Cookies</p>
+                    <p id="item-price">Price: RM3.00</p>
+                    <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                </div>
+
+            </div>
+
+            <div id="cupcake">
+                <p class="Minititle">Cupcake</p>
+                <div id="item-card">     
+                    <img src="/group_proj/Sweetify Images/Cupcake/choccup.webp" alt="Chocolate cupcake">
+                    <p id="item-name">Choc Cupcake</p>
+                    <p id="item-price">Price: RM2.50</p>
+                    <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                </div>
+
+                <div id="item-card">     
+                    <img src="/group_proj/Sweetify Images/Cupcake/RedVelvetCupcake.png" alt="Red Velvet cupcake">
+                    <p id="item-name">Red Velvet Cupcake</p>
+                    <p id="item-price">Price: RM2.50</p>
+                    <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                </div>
+
+                <div id="item-card">     
+                    <img src="/group_proj/Sweetify Images/Cupcake/biscoff.jpg" alt="Vanilla Cupcake">
+                    <p id="item-name">Vanilla Cupcake</p>
+                    <p id="item-price">Price: RM2.00</p>
+                    <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                </div>
+
+                <div id="item-card">     
+                    <img src="/group_proj/Sweetify Images/Cupcake/biscoff.jpg" alt="Biscoff Cupcake">
+                    <p id="item-name">Biscoff Cupcake</p>
+                    <p id="item-price">Price: RM2.80</p>
+                    <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                </div>
+
+                <div id="cakes">
+                  <p class="Minititle">Cake</p>
+                  <div id="item-card">   
+                      <img src="/group_proj/Sweetify Images/Cakes/cheesecake.jpg" alt="Cheesecake">
+                      <p id="item-name">Cheesecake</p>
+                      <p id="item-price">Price: RM6.00</p>
+                      <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                  </div>
+  
+                  <div id="item-card">   
+                      <img src="/group_proj/Sweetify Images/Cakes/choccake.avif" alt="Chocolate Cake">
+                      <p id="item-name">Chocolate cake</p>
+                      <p id="item-price">Price: RM5.00</p>
+                      <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                  </div>
+  
+                  <div id="item-card">   
+                      <img src="/group_proj/Sweetify Images/Cakes/carrotcake.webp" alt="Carrot Cake">
+                      <p id="item-name">Carrot cake</p>
+                      <p id="item-price">Price: RM3.50</p>
+                      <button class="add-to-cart" onclick="addincart()">Add To Cart</button>
+                  </div>
+            </div>
+
+            </div>
+        </div> 
+  
+     </div>
+
+</div>
+<div id="notification" style="display: none;">Item successfully added to cart!</div>
+
+<!--Cart page-->
+<div class="cart-page" style="display:none;">
+    <h2 class="Minititle">Your Cart</h2>
+    <div id="cart-items-container">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div>
+      <p id="childtitle">Total Amount: <span id="cart-total">0.00</span></p>
+      <button id="checkout-btn">Check Out</button>
+    </div>
+  </div>
+  
+
+
+<!--payment page-->
+<div class="payment-page" style="display:none;">
+    <div class="header">
+        <div class="Main">Make your payment here:</div>
+    </div>    <div class="qr-code">
+        <img src="SweetifyQR.jpeg" alt="QR Code">
+    </div>
+    <div class="bank-details">
+        <p>Bank Name: Maybank</p>
+        <p>Account Name: Sweetify.co</p>
+    </div>
+    <div class="upload-details">
+        <p>Upload Your Receipt: </p>
+    </div>
+    <div class="upload-file">
+        <input type="file" id="receipt" accept="image/*" >
+    </div>
+    <div class="remarks">
+            <p>Remarks: </p>
+        <textarea id="remarks" placeholder="Add your remarks here..."></textarea>
+    </div>
+    <button class="submit-button" onclick="submitForm()">Submit</button>
+</div>
+
+
+<!--OREDER NOW SECTION-->
+<div class="sections section0">
+<section>
+    <h1 class="Main">Cakes, Cupcakes and Cookies</h1>
+    <h7 class="childtitle">Freshly baked for you</h1>
+</section>
+</div>
+
+<!--INFINITE IMAGE SLIDER-->
+<div class="sections section-slider">
+    <div class="slider-container">
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <div class="slider" id="imageSlider">
+        <img src="/group_proj/Sweetify Images/Slider/2.png" alt="Cake 0" class="clone">
+        <img src="/group_proj/Sweetify Images/Slider/4.png" alt="Cake 1">
+        <img src="/group_proj/Sweetify Images/Slider/10.png" alt="Cake 2">
+        <img src="/group_proj/Sweetify Images/Slider/5.png" alt="Cake 3">
+        <img src="/group_proj/Sweetify Images/Slider/2.png" alt="Cake 4">
+        <img src="/group_proj/Sweetify Images/Slider/8.png" alt="Cake 5">
+        <img src="/group_proj/Sweetify Images/Slider/6.png" alt="Cake 6">
+        <img src="/group_proj/Sweetify Images/Slider/9.png" alt="Cake 7">
+        <img src="/group_proj/Sweetify Images/Slider/7.png" alt="Cake 8">
+        <img src="/group_proj/Sweetify Images/Slider/4.png" alt="Cake 9">
+        <img src="/group_proj/Sweetify Images/Slider/8.png" alt="Cake 10">
+        <img src="/group_proj/Sweetify Images/Slider/2.png" alt="Cake 11">
+        <img src="/group_proj/Sweetify Images/Slider/10.png" alt="Cake 12">
+        <img src="/group_proj/Sweetify Images/Slider/9.png" alt="Cake 13" class="clone">
+      </div>
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+    <a href="#" class="btnorder">ORDER NOW</a>
+  </div>
+  
+
+<!--DESSERT OF THE WEEK SECTION-->
+<div class="sections section2">
+<div class="section2header">
+<section>
+<h1 class="section2header">Desserts of the Week!</h1>
+<h5>Try out our desserts of the week!! Every week is a different one, special just for our customers.</h5>
+</section>
+</div>
+<div class="desserts-container" id="dessertsContainer">
+    <!-- Dessert items will be dynamically added here -->
+  </div>
+</div>
+
+
+<!--About US PAGE-->
+<div id="aboutUsSection" style="display: none;">
+  <section>
+  <h1 class="Main">About Us</h1>
+  <p class="sub-title">Welcome to Sweetify, your ultimate destination for sweet indulgences! — From Students to Students.</p>
+  <p class="sub-title">At Sweetify, we believe life is better with a touch of sweetness. Our mission is to craft desserts that delight your senses, warm your heart, and create unforgettable moments. From classic favorites to innovative creations, we offer a wide variety of treats that cater to every craving and occasion.</p>
+  <h1 class="Main">Our Story</h1>
+  <p class="sub-title">Sweetify was born out of a love for baking and a passion for spreading joy through sweets, right here at the heart of the International Islamic University Malaysia (UIA). What started as a humble venture among friends on campus has now blossomed into a thriving dessert haven, serving both the university community and beyond.</p>
+  <h1 class="Minititle">Why Sweetify?</h1>
+
+  <section id="whySweetify">
+    <div class="reasons">
+      <div class="reason">
+        <h3 class="sub-title">Premium Quality</h3>
+        <p class="sub-title">Every dessert is crafted using the finest ingredients to ensure premium quality and exceptional taste.</p>
+      </div>
+      <div class="reason">
+        <h3 class="sub-title">New Menu Every Week</h3>
+        <p class="sub-title">Fresh flavors await! Indulge in a delightful variety of desserts with a unique menu curated weekly.</p>
+      </div>
+      <div class="reason">
+        <h3 class="sub-title">Made with Love</h3>
+        <p class="sub-title">Our desserts are baked with care and passion to deliver joy in every bite.</p>
+      </div>
+    </div>
+  </section>
+    
+    </section>
+    </div>
+    
+
+
+<!--Contact PAGE-->
+<div id="contactSection" style="display: none;">
+  <section>
+    <h1 class="Main">Contact Us</h1>
+    <p class="sub-title">We'd love to hear from you! Reach out using the form below, or through our email or social media.</p>
+    <div id="contactContainer">
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="num">Phone Number</label>
+      <input type="tel" id="num" name="num" placeholder="Enter your phone number" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" class="btn3">Submit</button>
+      <div id="responseMessage" style="margin-top: 10px;"></div>
+    </form>
+    
+    <div id="ownerInfo">
+      <h7 class="Main">Find Us!</h2>
+      <p class="childtitle"><strong>Address:</strong> <br> KICT Building,<br> International Islamic University Malaysia (IIUM), <br> Jalan Gombak, <br>53100 Kuala Lumpur</p>
+      <p class="childtitle"><strong>Email:</strong> <a href="mailto:hello@sweetify.com">hello@sweetify.com</a></p>
+    </div>
+  </div>
+  </section>
+</div>
+
+  
+<!--FOOTER-->
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Career</a></li>
+</ul>
+</div>
+
+<div class="row">
+Copyright 2024 Sweetify - All rights reserved
+</div>
+</div>
+</footer>
+
+<script type="text/javascript" src="Sweetify.js"></script>
