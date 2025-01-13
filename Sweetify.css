@@ -773,7 +773,7 @@ header{
     width:100%;
     height:100vh;
     position:relative;
-    background-image:url("/Sweetify Images/Footer , Header/Header.jpeg");
+    background-image:url("Sweetify Images/Footer , Header/Header.jpeg");
     background-size:cover;
     background-attachment:fixed;
   }
