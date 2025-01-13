@@ -92,15 +92,15 @@ function NavBar() {
 const desserts = [
   {
     name: "Cheesecake",
-    image: "/Sweetify Images/cakes/cheesecake.jpg" 
+    image: "Sweetify Images/cakes/cheesecake.jpg" 
   },
   {
     name: "Red Velvet Cupcake",
-    image: "/Sweetify Images/Cupcake/RedVelvetCupcake.png" 
+    image: "Sweetify Images/Cupcake/RedVelvetCupcake.png" 
   },
   {
     name: "Sea Salt Cookies",
-    image: "/Sweetify Images/Cookies/SeaSaltCookies.jpeg" 
+    image: "Sweetify Images/Cookies/SeaSaltCookies.jpeg" 
   }
 ];
 
