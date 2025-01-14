@@ -92,7 +92,7 @@ function NavBar() {
 const desserts = [
   {
     name: "Cheesecake",
-    image: "Sweetify Images/Cakes/cheesecake.jpg" 
+    image: "Sweetify Images/cakes/cheesecake.jpg" 
   },
   {
     name: "Red Velvet Cupcake",
@@ -150,10 +150,6 @@ document.getElementById('aboutUsLink').addEventListener('click', function (event
   // Show the "About Us" section
   document.getElementById('aboutUsSection').style.display = 'block';
 });
-    
-    // Show the "About Us" section
-    document.getElementById('aboutUsSection').style.display = 'block';
-});
 
 
 // Contact Page Form Submission
@@ -206,6 +202,20 @@ document.querySelector('.container').style.display = 'none';
 });
 
 });
+
+document.getElementById('Home').addEventListener('click', function () {
+  document.querySelectorAll('#header,.sections, footer,.container').forEach(function (section) {
+    section.style.display = 'block';
+  });
+  document.getElementById('contactSection').style.display = 'none';
+  document.getElementById('aboutUsSection').style.display = 'none';
+
+   // Hide other sections
+   document.querySelectorAll(' .section3,.product-page,.cart-page,.payment-page').forEach(function (section) {
+    section.style.display = 'none';
+  });
+  
+  });
 
 const cart = []; 
 
