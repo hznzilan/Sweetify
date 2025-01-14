@@ -125,18 +125,31 @@ document.querySelectorAll('.btnorder').forEach((button) => {
     document.querySelectorAll('.container, .sections, .section3').forEach(function (section) {
       section.style.display = 'none';
   });
-     
-      
   });
 
-  document.getElementById('aboutUsLink').addEventListener('click', function (event) {
+
+  document.getElementById('ProductLink').addEventListener('click', function (event) {
     event.preventDefault(); 
-    
-    // Hide other sections
-    document.querySelectorAll('.container, .sections, .product-page, contactForm,.cart-page,.payment-page').forEach(function (section) {
-        section.style.display = 'none';
-    document.getElementById('contactSection').style.display = 'none';
-    });
+    document.querySelector('.product-page').style.display = 'block';
+
+       // Hide other sections
+    document.querySelectorAll('.container, .sections, .section3').forEach(function (section) {
+      section.style.display = 'none';
+  });
+});
+
+document.getElementById('aboutUsLink').addEventListener('click', function (event) {
+  event.preventDefault(); 
+  
+  // Hide other sections
+  document.querySelectorAll('.container, .sections, .product-page, contactForm,.cart-page,.payment-page').forEach(function (section) {
+      section.style.display = 'none';
+  document.getElementById('contactSection').style.display = 'none';
+  });
+  
+  // Show the "About Us" section
+  document.getElementById('aboutUsSection').style.display = 'block';
+});
     
     // Show the "About Us" section
     document.getElementById('aboutUsSection').style.display = 'block';
@@ -246,9 +259,9 @@ cart.forEach(item => {
   cartItem.innerHTML = `
     <p>${item.name} (RM${item.price.toFixed(2)})</p>
     <div class="quantity-controls">
-      <button class="decrease-quantity" onclick="decreaseQuantity('${item.name}')">-</button>
+      <class="decrease-quantity" onclick="decreaseQuantity('${item.name}')">
       <span>${item.quantity}</span>
-      <button class="increase-quantity" onclick="increaseQuantity('${item.name}')">+</button>
+      <class="increase-quantity" onclick="increaseQuantity('${item.name}')">
     </div>
   `;
   cartItemsContainer.appendChild(cartItem);
